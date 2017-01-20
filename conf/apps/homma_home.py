@@ -22,7 +22,7 @@ class HommaHome:
             data = response.read()
             devices = json.loads(data.decode('utf-8'))
 
-        except requests.exceptions.RequestException:
+        except:
             print('HTTP Request failed')
 
         return devices
