@@ -16,7 +16,7 @@ class HommaHome:
         try:
             api_url = 'https://api-stage.homma.io/devices'
             req = urllib.request.Request(api_url,
-                                         headers={'X-Auth-Token': '-oTy5N-M6myJP7QOq_YV'})
+                                         headers={'X-Auth-Token': session_token})
 
             response = urllib.request.urlopen(req)
             data = response.read()
